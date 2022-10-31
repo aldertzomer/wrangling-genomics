@@ -326,8 +326,6 @@ SRR2584863_2un.trim.fastq.gz  SRR2584866_2un.trim.fastq.gz  SRR2589044_2un.trim.
 >> 
 >> Then take a look at the html files in your browser.
 >> 
->> Remember to replace everything between the `@` and `:` in your scp
->> command with your AWS instance number.
 >>
 >> After trimming and filtering, our overall quality is much higher, 
 >> we have a distribution of sequence lengths, and more samples pass 
