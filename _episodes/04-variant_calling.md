@@ -478,30 +478,9 @@ this box, type the name of the "chromosome" followed by a colon and the position
 
 [IGV](http://www.broadinstitute.org/igv/) is a stand-alone browser, which has the advantage of being installed locally and providing fast access. Web-based genome browsers, like [Ensembl](http://www.ensembl.org/index.html) or the [UCSC browser](https://genome.ucsc.edu/), are slower, but provide more functionality. They not only allow for more polished and flexible visualization, but also provide easy access to a wealth of annotations and external data sources. This makes it straightforward to relate your data with information about repeat regions, known genes, epigenetic features or areas of cross-species conservation, to name just a few.
 
-In order to use IGV, we will need to transfer some files to our local machine. We know how to do this with `scp`. 
-Open a new tab in your terminal window and create a new folder. We will put this folder on our Desktop for 
-demonstration purposes, but in general you should avoide proliferating folders and files on your Desktop and 
+In order to use IGV, we will need to transfer some files to our local machine. We know how to do this with the webbrowser. 
+Create a new folder and download the files SRR2584866.aligned.sorted.bam, SRR2584866.aligned.sorted.bam.bai, ecoli_rel606.fasta, SRR2584866_final_variants.vcf. We will put this folder on our Desktop for demonstration purposes, but in general you should avoide proliferating folders and files on your Desktop and 
 instead organize files within a directory structure like we have been using in our `dc_workshop` directory.
-
-~~~
-$ mkdir ~/Desktop/files_for_igv
-$ cd ~/Desktop/files_for_igv
-~~~
-{: .bash}
-
-Now we will transfer our files to that new directory. Remember to replace the text between the `@` and the `:` 
-with your AWS instance number. The commands to `scp` always go in the terminal window that is connected to your
-local computer (not your AWS instance).
-
-~~~
-$ scp dcuser@ec2-34-203-203-131.compute-1.amazonaws.com:~/dc_workshop/results/bam/SRR2584866.aligned.sorted.bam ~/Desktop/files_for_igv
-$ scp dcuser@ec2-34-203-203-131.compute-1.amazonaws.com:~/dc_workshop/results/bam/SRR2584866.aligned.sorted.bam.bai ~/Desktop/files_for_igv
-$ scp dcuser@ec2-34-203-203-131.compute-1.amazonaws.com:~/dc_workshop/data/ref_genome/ecoli_rel606.fasta ~/Desktop/files_for_igv
-$ scp dcuser@ec2-34-203-203-131.compute-1.amazonaws.com:~/dc_workshop/results/vcf/SRR2584866_final_variants.vcf ~/Desktop/files_for_igv
-~~~
-{: .bash}
-
-You will need to type the password for your AWS instance each time you call `scp`. 
 
 Next, we need to open the IGV software. If you have not done so already, you can download IGV from the [Broad Institute's software page](https://www.broadinstitute.org/software/igv/download), double-click the `.zip` file
 to unzip it, and then drag the program into your Applications folder. 
