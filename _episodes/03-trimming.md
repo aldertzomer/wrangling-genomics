@@ -132,8 +132,8 @@ $ cd ~/dc_workshop/data/untrimmed_fastq
 > ~~~
 > $ cp ~/coursedata/B-MBIMIGE22-23/intro_genomics_timalex/adapters/*.fa .
 > ~~~
-> 
 > {: .bash}
+> 
 {: .prereq}
 
   
