@@ -70,11 +70,26 @@ $ mv sub/ ~/dc_workshop/data/trimmed_fastq_small
 ~~~
 {: .bash}
 
+> ## Faster option
+>
+> If your workshop is short on time or the venue's internet connection is weak or unstable, learners can
+> avoid needing to download the data and instead use the data files provided in the `~/coursedata/B-MBIMIGE22-23/intro_genomics_timalex/.backup/` directory.
+>
+> ~~~
+> $ mkdir -p ~/dc_workshop/data/trimmed_fastq_small
+> $ cp ~/course_data/B-MBIMIGE22-23/intro_genomics_timalex/.backup/trimmed_fastq_small/* .
+> ~~~
+> {: .bash}
+>
+{: .callout}
+
+
 You will also need to create directories for the results that will be generated as part of this workflow. We can do this in a single
 line of code, because `mkdir` can accept multiple new directory
 names as input.
 
 ~~~
+$ cd ~/dc_workshop
 $ mkdir -p results/sam results/bam results/bcf results/vcf
 ~~~
 {: .bash}
