@@ -123,14 +123,15 @@ $ cd ~/dc_workshop/data/untrimmed_fastq
 ~~~
 {: .bash}
 
-We are going to run Trimmomatic on one of our paired-end samples. 
-While using FastQC we saw that Nextera adapters were present in our samples. 
-The adapter sequences came with the installation of trimmomatic, so we will first copy these sequences into our current directory.
-
-~~~
-$ cp ~/.miniconda3/pkgs/trimmomatic-0.38-0/share/trimmomatic-0.38-0/adapters/NexteraPE-PE.fa .
-~~~
-{: .bash}
+> ### prerequisite
+> We are going to run Trimmomatic on one of our paired-end samples. 
+> While using FastQC we saw that Nextera adapters were present in our samples. 
+> The adapter sequences came with the installation of trimmomatic, so we will first copy these sequences into our current directory.
+> 
+> ~~~
+> $ cp ~/coursedata/B-MBIMIGE22-23/intro_genomics_timalex/adapters/*.fa .
+> ~~~
+{: .prereq}
 
 We will also use a sliding window of size 4 that will remove bases if their
 phred score is below 20 (like in our example above). We will also
@@ -271,7 +272,7 @@ SRR2584863_2un.trim.fastq.gz  SRR2589044_1.fastq.gz
 >
 >> ## Solution
 >> ~~~
->> $ ls ~/miniconda3/pkgs/trimmomatic-0.38-0/share/trimmomatic-0.38-0/adapters/
+>> $ ls ~/coursedata/B-MBIMIGE22-23/intro_genomics_timalex/adapters/
 >> ~~~
 >> {: .bash}
 >>
