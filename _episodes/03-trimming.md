@@ -135,8 +135,8 @@ $ cd ~/dc_workshop/data/untrimmed_fastq
 > 
 > {: .bash}
 {: .prereq}
-  
 
+  
 We will also use a sliding window of size 4 that will remove bases if their
 phred score is below 20 (like in our example above). We will also
 discard any reads that do not have at least 25 bases remaining after
