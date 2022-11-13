@@ -122,9 +122,9 @@ Now we will run Trimmomatic on our data. To begin, navigate to your `untrimmed_f
 $ cd ~/dc_workshop/data/untrimmed_fastq
 ~~~
 {: .bash}
-  
 
-> ### prerequisite  
+
+> ### Prerequisite
 > We are going to run Trimmomatic on one of our paired-end samples.  
 > While using FastQC we saw that Nextera adapters were present in our samples. 
 > The adapter sequences came with the installation of trimmomatic, so we will first copy these sequences into our current directory.
@@ -133,7 +133,6 @@ $ cd ~/dc_workshop/data/untrimmed_fastq
 > $ cp ~/coursedata/B-MBIMIGE22-23/intro_genomics_timalex/adapters/*.fa .
 > ~~~
 > {: .bash}
-> 
 {: .prereq}
 
   
