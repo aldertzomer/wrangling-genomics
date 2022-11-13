@@ -83,7 +83,7 @@ $ mv sub/ ~/dc_workshop/data/trimmed_fastq_small
 >
 {: .callout}
 
-
+  
 You will also need to create directories for the results that will be generated as part of this workflow. We can do this in a single
 line of code, because `mkdir` can accept multiple new directory
 names as input.
