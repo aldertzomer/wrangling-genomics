@@ -182,6 +182,45 @@ displayed below with the different fields highlighted.
 
 ![sam_bam2](../img/sam_bam3.png)
 
+> ## Question
+> 
+> If you inspect your generated sam file. Do you notice a big difference with the example above? 
+>
+>> ## Solution
+>> 
+>> As you will see the HWI-ST.... header sections are not present in our sam file and we see SRR2.... read names. 
+>> ~~~
+>> $ head <your sam file>
+>> $ head <your trimmed sub.fastq file>
+>> ~~~
+>> {: .bash}
+>> 
+>> ~~~ 
+>> @SQ     SN:CP000819.1   LN:4629812
+>> @PG     ID:bwa  PN:bwa  VN:0.7.17-r1188 CL:bwa mem data/ref_genome/ecoli_rel606.fasta data/trimmed_fastq_small/SRR2584866_1.trim.sub.fastq data/trimmed_fastq_small/SRR2584866_2.trim.sub.fastq
+>> SRR2584866.7    83      CP000819.1      3585268 60      26M     =       3584643 -651    GCTTCCCATGCCAATTAATACATGTG      IJJJJJJJJJIJJHHHHHFEFFFCC@      NM:i:0  MD:Z:26 MC:Z:150M       AS:i:26 XS:i:0
+>> SRR2584866.7    163     CP000819.1      3584643 60      150M    =       3585268 651     TCCTCAATCTTAAGCGGATCAATGAGCTGGTACGCCATCAGCATATTGATTATCTGGTGTGAATTTCAGGCTTACGGTGAGTCTGGCTACGCTGCCACACAGATTAGCTAATTGAAACGCCTTTCACCCCTGCCATACCTTTTAATAATC      C@CFFFFFGHGGGGGJJJIJJJJIJJJIJIHIIJJJJJJJJJJJJJEIIIJIJJJJJJIIJJJHHHHHHHFFFFFDDDDDDDDDDDDDDDDBBDDDDDDDDBDDDDDDDEDDEDDDDDDDDBDDCDDDDDBDDBDDDDDDDDDDDDEDED  NM:i:0  MD:Z:150        MC:Z:26M        AS:i:150    XS:i:0
+>> ~~~
+>>
+>> ~~~
+>> @SRR2584863.3 HWI-ST957:244:H73TDADXX:1:1101:9337:2248/1
+>> ATCAACAACACGCGTTTATTGGTCTGGCTGATCACCGCCGCCAGGTTGGCGCAGACAAAGGTTTTACCGATTGACGGGCTAACCCCGGTCATCATCAACACATTGTTCTGCGCCTGCATCATCGCGAAGTGCAGGCTG
+>> +
+>> C@CFFFFFHHHGHIIJJJJJJIIJIIJJJIIJJJJJGGGGGBGHHHFFBEDDDBBDDDDDD:>CBCCC>5;B?CDBBDBBBCCA?BD5<<@AAACCDCDCDDCDDDCDDCDBBDDBD<@>@@CCBDB<@BACCC<38?
+>> @SRR2584863.5 HWI-ST957:244:H73TDADXX:1:1101:16354:2243/1
+>> TCCGTAAACATTTTAATGTCGTGCTCGAAAGAACGGTGCGTGAACTGCGCGGCGAACCCTGTTTGCAACTGGAAGAGTTTGCACCGACGAAGCAGGAAATTATCTGTTCCCGCTCGTTTGGTGAACGCATCACGGATTATCCGTCGATGC
+>> +
+>> @@CFBADBFHFHHFIJIGGGGFGHIIIJJJEHIIIGHIJJGIIJGGIIIJJHFDDDBDDDDCDCCCCCDDCCCDDDDACCCDDCDDDDDBD?>CC@DDDDB@ACDCACCCDDBBBB<@D?@BBCCDDDDBBCDB>B>@CDDDDBDDDDC@
+>> ~~~
+>> 
+>> As you see the original headers from the fastq files have been changed to reflect the sample names. The shorter header (until the first space) will end up in the sam file.  
+>> Usually it is good habit not to mess with original headers from fastq files since some tools may rely on the specific formatting requirements!  
+>> {: .output}
+>>
+> {: .solution}
+{: .challenge} 
+
+
 We will convert the SAM file to BAM format using the `samtools` program with the `view` command and tell this command that the input is in SAM format (`-S`) and to output BAM format (`-b`): 
 
 ~~~
