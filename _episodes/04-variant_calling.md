@@ -70,7 +70,7 @@ $ mv sub/ ~/dc_workshop/data/trimmed_fastq_small
 ~~~
 {: .bash}
 
-> ## Faster option
+> ## Faster (?) option
 >
 > If your workshop is short on time or the venue's internet connection is weak or unstable, learners can
 > avoid needing to download the data and instead use the data files provided in the `~/coursedata/B-MBIMIGE22-23/intro_genomics_timalex/.backup/` directory.
@@ -78,6 +78,8 @@ $ mv sub/ ~/dc_workshop/data/trimmed_fastq_small
 > ~~~
 > $ mkdir -p ~/dc_workshop/data/trimmed_fastq_small
 > $ cp ~/course_data/B-MBIMIGE22-23/intro_genomics_timalex/.backup/trimmed_fastq_small/* .
+> $ tar xvf sub.tar.gz
+> $ mv sub/ ~/dc_workshop/data/trimmed_fastq_small
 > ~~~
 > {: .bash}
 >
