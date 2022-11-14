@@ -228,8 +228,10 @@ $ samtools view -S -b results/sam/SRR2584866.aligned.sam > results/bam/SRR258486
 ~~~
 {: .bash}
 
+Output is suppressed by default.
+  
 ~~~
-[samopen] SAM header is present: 1 sequences.
+<none>
 ~~~
 {: .output}
 
@@ -245,7 +247,7 @@ $ samtools sort -o results/bam/SRR2584866.aligned.sorted.bam results/bam/SRR2584
 
 Our files are pretty small, so we will not see this output. If you run the workflow with larger files, you will see something like this:
 ~~~
-[bam_sort_core] merging from 2 files...
+<none>
 ~~~
 {: .output}
 
