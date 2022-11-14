@@ -304,6 +304,7 @@ $ bcftools mpileup -O b -o results/bcf/SRR2584866_raw.bcf \
 
 ~~~
 [mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
 ~~~
 {: .output}
 
@@ -438,11 +439,11 @@ to learn more about the VCF file format.
 >> {: .bash}
 >> 
 >> ~~~ 
->> 766
+>> 776
 >> ~~~
 >> {: .output}
 >>
->> There are 766 variants in this file.
+>> There are 776 variants in this file.
 > {: .solution}
 {: .challenge}
 
@@ -534,7 +535,7 @@ this box, type the name of the "chromosome" followed by a colon and the position
 
 ### Viewing with IGV
 
-[IGV](http://www.broadinstitute.org/igv/) is a stand-alone browser, which has the advantage of being installed locally and providing fast access. Web-based genome browsers, like [Ensembl](http://www.ensembl.org/index.html) or the [UCSC browser](https://genome.ucsc.edu/), are slower, but provide more functionality. They not only allow for more polished and flexible visualization, but also provide easy access to a wealth of annotations and external data sources. This makes it straightforward to relate your data with information about repeat regions, known genes, epigenetic features or areas of cross-species conservation, to name just a few.
+[IGV](http://www.broadinstitute.org/igv/) is a stand-alone browser, which has the advantage of being installed locally and providing fast access. Another alternative that is frequently used is [TABLET](https://ics.hutton.ac.uk/tablet/). Web-based genome browsers, like [Ensembl](http://www.ensembl.org/index.html) or the [UCSC browser](https://genome.ucsc.edu/), are slower, but provide more functionality. They not only allow for more polished and flexible visualization, but also provide easy access to a wealth of annotations and external data sources. This makes it straightforward to relate your data with information about repeat regions, known genes, epigenetic features or areas of cross-species conservation, to name just a few.
 
 In order to use IGV, we will need to transfer some files to our local machine. We know how to do this with the webbrowser. 
 Create a new folder and download the files SRR2584866.aligned.sorted.bam, SRR2584866.aligned.sorted.bam.bai, ecoli_rel606.fasta, SRR2584866_final_variants.vcf. We will put this folder on our Desktop for demonstration purposes, but in general you should avoide proliferating folders and files on your Desktop and 
