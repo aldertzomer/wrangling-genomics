@@ -318,7 +318,7 @@ SRR2584863_2un.trim.fastq.gz  SRR2584866_2un.trim.fastq.gz  SRR2589044_2un.trim.
 >
 >> ## Solution
 >>
->> In your AWS terminal window do:
+>> In your terminal window do:
 >>
 >> ~~~
 >> $ fastqc ~/dc_workshop/data/trimmed_fastq/*.fastq*
