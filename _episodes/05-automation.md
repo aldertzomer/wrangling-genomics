@@ -81,6 +81,7 @@ directory called `scripts/`. Previously, we used
 
 ~~~
 $ mkdir -p ~/dc_workshop/scripts
+$ mkdir -p ~/dc_workshop/docs
 $ cd ~/dc_workshop/scripts
 $ touch read_qc.sh
 $ ls 
