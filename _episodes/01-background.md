@@ -74,7 +74,7 @@ This metadata describes information on the *Ara-3* clones and the columns repres
 > > 1. 25 different generations
 > > 2. 62 rows, 12 columns
 > > 3. 10 citrate+ mutants
-> > 4. 6 hypermutable mutants
+> > 4. 5 hypermutable mutants
 > {: .solution}
 {: .challenge}
 
