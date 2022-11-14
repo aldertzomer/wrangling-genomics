@@ -449,7 +449,7 @@ $ bash run_variant_calling.sh
 > over time? Examine the metadata table. What is one reason the number of mutations may have changed the way they did?
 > 
 > Hint: You can find a copy of the output files for the subsampled trimmed FASTQ file variant calling in the 
-> `~/.solutions/wrangling-solutions/variant_calling_auto/` directory.
+> `~/coursedata/B-MBIMIGE22-23/intro_genomics_timalex/solutions.zip` in the `/wrangling-solutions/variant_calling_auto/` directory.
 > 
 >> ## Solution
 >> 
@@ -473,7 +473,7 @@ $ bash run_variant_calling.sh
 > 
 > If you have time after completing the previous exercise, use `run_variant_calling.sh` to run the variant calling pipeline 
 > on the full-sized trimmed FASTQ files. You should have a copy of these already in `~/dc_workshop/data/trimmed_fastq`, but if 
-> you do not, there is a copy in `~/.solutions/wrangling-solutions/trimmed_fastq`. Does the number of variants change per sample?
+> you do not, there is a copy in `~/coursedata/B-MBIMIGE22-23/intro_genomics_timalex/solutions.zip` in the `/wrangling-solutions/trimmed_fastq` directory. Does the number of variants change per sample?
 {: .challenge} 
 
 
