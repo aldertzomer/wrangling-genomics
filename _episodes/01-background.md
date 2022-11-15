@@ -74,8 +74,7 @@ This metadata describes information on the *Ara-3* clones and the columns repres
 > > 1. 25 different generations
 > >    + This answer is easiest found by nspecting the metadata in a spreadsheet.  
 > >    + An option could be to use regular expressions (see advanced extra work (not covered in the exam)).
-> >    > grep -P -o '^[A-Za-z0-9]+,[0-9]+,' Ecoli_metadata_composite.csv | sed -r -e "s/^.+,([0-9]+),/\1/" | sort -u | wc
-> >    > {: .bash}
+> >      grep -P -o '^[A-Za-z0-9]+,[0-9]+,' Ecoli_metadata_composite.csv | sed -r -e "s/^.+,([0-9]+),/\1/" | sort -u | wc
 > > 2. 62 rows, 12 columns
 > > 3. 10 citrate+ mutants
 > > 4. 5/6 hypermutable mutants (depending if you look at the clade (+H) or the mutator label)
