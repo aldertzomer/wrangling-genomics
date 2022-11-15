@@ -62,7 +62,7 @@ This metadata describes information on the *Ara-3* clones and the columns repres
 
 > ## Challenge
 > 
-> Based on the metadata, can you answer the following questions (mostly using the command line)?
+> Based on the metadata, can you answer the following questions (mostly using the command line except Q1 which may be a challenge requiring more background knowledge not directly covered in this course (regular expressions and/or using awk))?
 > 
 > 1. How many different generations exist in the data?
 > 2. How many rows and how many columns are in this data?
@@ -72,6 +72,10 @@ This metadata describes information on the *Ara-3* clones and the columns repres
 > > ## Solution
 >> 
 > > 1. 25 different generations
+> >    + This answer is easiest found by nspecting the metadata in a spreadsheet.  
+> >    + An option could be to use regular expressions (see advanced extra work (not covered in the exam)).
+> >    > grep -P -o '^[A-Za-z0-9]+,[0-9]+,' Ecoli_metadata_composite.csv | sed -r -e "s/^.+,([0-9]+),/\1/" | sort -u | wc
+> >    > {: .bash}
 > > 2. 62 rows, 12 columns
 > > 3. 10 citrate+ mutants
 > > 4. 5/6 hypermutable mutants (depending if you look at the clade (+H) or the mutator label)
