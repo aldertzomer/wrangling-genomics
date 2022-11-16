@@ -231,7 +231,7 @@ $ samtools view -S -b results/sam/SRR2584866.aligned.sam > results/bam/SRR258486
 Output is suppressed by default.
   
 ~~~
-<none>
+ 
 ~~~
 {: .output}
 
@@ -247,7 +247,7 @@ $ samtools sort -o results/bam/SRR2584866.aligned.sorted.bam results/bam/SRR2584
 
 Our files are pretty small, so we will not see this output. If you run the workflow with larger files, you will see something like this:
 ~~~
-<none>
+ 
 ~~~
 {: .output}
 
