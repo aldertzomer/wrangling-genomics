@@ -81,7 +81,7 @@ This metadata describes information on the *Ara-3* clones and the columns repres
 > >        
 > >      or if you followed the extra `awk` work:  
 > >      `awk -F',' '{print $2}' Ecoli_metadata_composite.csv | sort -u | wc`  
-> >      Why does awk return 26 instead as 25 as a count?
+> >      Why does awk return 26 instead of 25 as a count?
 > > 2. 62 rows, 12 columns
 > > 3. 10 citrate+ mutants
 > > 4. 5/6 hypermutable mutants (depending if you look at the clade (+H) or the mutator label)
