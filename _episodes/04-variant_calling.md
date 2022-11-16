@@ -245,12 +245,6 @@ $ samtools sort -o results/bam/SRR2584866.aligned.sorted.bam results/bam/SRR2584
 ~~~
 {: .bash}
 
-Our files are pretty small, so we will not see this output. If you run the workflow with larger files, you will see something like this:
-~~~
- 
-~~~
-{: .output}
-
 
 SAM/BAM files can be sorted in multiple ways, e.g. by location of alignment on the chromosome, by read name, etc. It is important to be aware that different alignment tools will output differently sorted SAM/BAM, and different downstream tools require differently sorted alignment files as input.
 
