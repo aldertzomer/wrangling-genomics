@@ -63,7 +63,7 @@ This metadata describes information on the *Ara-3* clones and the columns repres
 > ## Challenge
 > 
 > Based on the metadata, can you answer the following questions?  
-> (mostly using the command line except Q1 which will be a real challenge requiring more background knowledge not directly covered within this course (regular expressions and/or using awk)).
+> *Try using the command line where appropriate (except Q1 which will be a real challenge requiring more background knowledge not directly covered within this course (regular expressions and/or using awk)).*
 > 
 > 1. How many different generations exist in the data?
 > 2. How many rows and how many columns are in this data?
@@ -73,8 +73,8 @@ This metadata describes information on the *Ara-3* clones and the columns repres
 > > ## Solution
 >> 
 > > 1. 25 different generations
-> >    + This answer is easiest found by nspecting the metadata in a spreadsheet.
-> >    + An option could be to use `awk` or regular expressions in combination with grep (see advanced extra work (not covered in the exam)).  
+> >    + This answer is easiest found by inspecting the metadata in a spreadsheet.
+> >    + More challenging option is to use `awk` or regular expressions in combination with grep (see advanced extra work (not covered in the exam)).  
 > >      Process: get the second field of the metadata, return an unique list and count.  
 > >      + grep/regular expression (matching from `^` start until first `,` then only numbers `[0-9]`:  
 > >        `grep -P -o '^[A-Za-z0-9]+,[0-9]+,' Ecoli_metadata_composite.csv | sed -r "s/.+,([0-9]+),/\1/" | sort -u | wc -l`
