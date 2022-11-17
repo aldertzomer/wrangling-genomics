@@ -73,15 +73,17 @@ This metadata describes information on the *Ara-3* clones and the columns repres
 > > ## Solution
 >> 
 > > 1. 25 different generations
-> >    + This answer is easiest found by nspecting the metadata in a spreadsheet.  
+> >    + This answer is easiest found by nspecting the metadata in a spreadsheet.
 > >    + An option could be to use `awk` or regular expressions in combination with grep (see advanced extra work (not covered in the exam)).  
 > >      Process: get the second field of the metadata, return an unique list and count.  
-> >      
-> >      `grep -P -o '^[A-Za-z0-9]+,[0-9]+,' Ecoli_metadata_composite.csv | sed -r -e "s/^.+,([0-9]+),/\1/" | sort -u | wc`  
-> >        
-> >      or if you followed the extra `awk` work:  
-> >      `awk -F',' '{print $2}' Ecoli_metadata_composite.csv | sort -u | wc`  
-> >      Why does awk return 26 instead of 25 as a count?
+> >      + grep/regular expression (matching from ^ start not (^), then only numbers:  
+> >        `grep -P -o '^[^,]+,[0-9]+,' Ecoli_metadata_composite.csv | sed -r "s/.+,([0-9]+),/\1/" | sort -u | wc -l`
+> >      + or if you followed the extra `awk` work:  
+> >        `awk -F',' '{print $2}' Ecoli_metadata_composite.csv | sort -u | wc -l`  
+> >        Why does awk return 26 instead of 25 as a count?
+> >    + Student contributed solution using the toolbox covered in the main instructions:  
+> >      `cut -d, -f2 Ecoli_metadata_composite.txt | tail -n+2 | sort -u | wc -l`  
+> >      The `tail -n+2` command uses explicit **+2** to start printing output from line 2 onwards to skip counting the header.
 > > 2. 62 rows, 12 columns
 > > 3. 10 citrate+ mutants
 > > 4. 5/6 hypermutable mutants (depending if you look at the clade (+H) or the mutator label)
