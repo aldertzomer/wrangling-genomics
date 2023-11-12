@@ -68,11 +68,11 @@ curl -O ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR258/006/SRR2584866/SRR2584866_2.fa
 > ## Faster option
 >
 > If your workshop is short on time or the venue's internet connection is weak or unstable, learners can
-> avoid needing to download the data and instead use the data files provided in the `~/coursedata/B-MBIMIGE22-23/intro_genomics_timalex/.backup/` directory.
+> avoid needing to download the data and instead use the data files provided in the `~/course_data/B-MBIMIGE22-23/intro_genomics_timalex/.backup/` directory.
 >
 > ~~~
 > $ cd ~/dc_workshop/data/untrimmed_fastq/
-> $ cp ~/coursedata/B-MBIMIGE22-23/intro_genomics_timalex/.backup/untrimmed_fastq/*fastq.gz .
+> $ cp ~/course_data/B-MBIMIGE22-23/intro_genomics_timalex/.backup/untrimmed_fastq/*fastq.gz .
 > ~~~
 > {: .bash}
 >
