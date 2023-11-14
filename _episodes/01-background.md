@@ -94,6 +94,8 @@ This metadata describes information on the *Ara-3* clones and the columns repres
 > >      + find plus in the LAST ($=end of line) column and count number of rows
 > >      + Altrnative a count can be done in one go with grep -c: `grep -c ',plus$' Ecoli_metadata_composite.csv`
 > > 6. 5/6 hypermutable mutants (depending if you look at the clade (+H) or the mutator label)
+> >    + `grep -c '+H,' Ecoli_metadata_composite.csv`
+> >      + It finds all lines that has the +H (hypermutator) flag. It also counts (-c)
 > {: .solution}
 {: .challenge}
 
