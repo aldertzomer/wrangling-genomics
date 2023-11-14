@@ -78,13 +78,16 @@ This metadata describes information on the *Ara-3* clones and the columns repres
 > >      Process: get the second field of the metadata, return an unique list and count.  
 > >      + grep/regular expression (matching from `^` start until first `,` then only numbers `[0-9]`:  
 > >        + `grep -P -o '^[A-Za-z0-9]+,[0-9]+,' Ecoli_metadata_composite.csv | sed -r "s/.+,([0-9]+),/\1/" | sort -u | wc -l`
-> >          + first we use grep to ONLY (-o) return the REGEXP (-P) match to the MOTIF Starts with (^) any alphabeth character followed by , and a numer ([0-9]+)
+> >          + first use grep to ONLY (-o) return the REGULAREXPRESSION (-P) match to the MOTIF Starts with (^) any alphabeth character followed by , and a numer ([0-9]+)
 > >          + sed is basically a search and replace on online. It searches in the grep output for the number and only returns (\1) the number found by ([0-9]+).
 > >          + Next we make sorted list, make them uniq and count the uniques lines.
 > >          + Try asking [ChatGPT](https://chat.openai.com/share/e19bf110-dbce-40ba-a04e-5b379cf7e2c6) to explain the grep answer and be amazed! 
 > >      + or if you followed the extra `awk` work:  
-> >        `awk -F',' '{print $2}' Ecoli_metadata_composite.csv | sort -u | wc -l`  
-> >        Why does awk return 26 instead of 25 as a count?
+> >          + `awk -F',' '{print $2}' Ecoli_metadata_composite.csv | sort -u | wc -l`
+> >            + awk will let you work with column data where -F specifies we use the comma as column separator
+> >            + next we need to tell by "programming" that we want to see column 2 ($2).
+> >            + subsequently we make a sorted list into a unique list and line count.
+> >          + Why does awk return 26 instead of 25 as a count? Header?
 > >    + Student contributed solution using the toolbox covered in the main instructions:  
 > >      + `cut -d, -f2 Ecoli_metadata_composite.csv | tail -n+2 | sort -u | wc -l`  
 > >         + The cut command can extract a specific COLUMN of data based on the specified delimiter (-d saying it is a comma). Then -f2 extracts the SECOND column.
