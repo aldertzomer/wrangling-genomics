@@ -77,13 +77,19 @@ This metadata describes information on the *Ara-3* clones and the columns repres
 > >    + More challenging option is to use `awk` or regular expressions in combination with grep (see advanced extra work (not covered in the exam)).  
 > >      Process: get the second field of the metadata, return an unique list and count.  
 > >      + grep/regular expression (matching from `^` start until first `,` then only numbers `[0-9]`:  
-> >        `grep -P -o '^[A-Za-z0-9]+,[0-9]+,' Ecoli_metadata_composite.csv | sed -r "s/.+,([0-9]+),/\1/" | sort -u | wc -l`
+> >        + `grep -P -o '^[A-Za-z0-9]+,[0-9]+,' Ecoli_metadata_composite.csv | sed -r "s/.+,([0-9]+),/\1/" | sort -u | wc -l`
+> >          + first we use grep to ONLY (-o) return the REGEXP (-P) match to the MOTIF Starts with (^) any alphabeth character followed by , and a numer ([0-9]+)
+> >          + sed is basically a search and replace on online. It searches in the grep output for the number and only returns (\1) the number found by ([0-9]+).
+> >          + Next we make sorted list, make them uniq and count the uniques lines.
+> >          + Try asking [ChatGPT](https://chat.openai.com/) to explain the grep answer and be amazed! 
 > >      + or if you followed the extra `awk` work:  
 > >        `awk -F',' '{print $2}' Ecoli_metadata_composite.csv | sort -u | wc -l`  
 > >        Why does awk return 26 instead of 25 as a count?
 > >    + Student contributed solution using the toolbox covered in the main instructions:  
-> >      `cut -d, -f2 Ecoli_metadata_composite.txt | tail -n+2 | sort -u | wc -l`  
-> >      The `tail -n+2` command uses explicit **+2** to start printing output from line 2 onwards to skip counting the header.
+> >      + `cut -d, -f2 Ecoli_metadata_composite.csv | tail -n+2 | sort -u | wc -l`  
+> >         + The cut command can extract a specific COLUMN of data based on the specified delimiter (-d saying it is a comma). Then -f2 extracts the SECOND column.
+> >         + The `tail -n+2` command uses explicit **+2** to start printing output from line 2 onwards to skip counting the header.
+> >         + We subsequently sort and make UNIQUE (-u) and count the lines
 > > 2. 62 rows, 12 columns
 > >    + `tail -n+2 Ecoli_metadata_composite.csv | wc -l`
 > >      + tail complete file from line 2 down, subsequently count the number of lines
