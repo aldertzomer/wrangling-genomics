@@ -88,7 +88,7 @@ This metadata describes information on the *Ara-3* clones and the columns repres
 > >    + `tail -n+2 Ecoli_metadata_composite.csv | wc -l`
 > >      + tail complete file from line 2 down, subsequently count the number of lines
 > >    + `head -n1 Ecoli_metadata_composite.csv | grep ',' -o | wc -l`
-> >      + This takes the first HEADER line only, finds with grep ONLY (-o) matching , and counts them. We need to add 1 for the total: 11:1 = 12
+> >      + This takes the first HEADER line only, finds with grep ONLY (-o) matching , and counts them. We need to add 1 for the total: 11+1 = 12
 > > 4. 10 citrate+ mutants
 > >    + `grep ',plus$' Ecoli_metadata_composite.csv | wc -l`
 > >      + find plus in the LAST ($=end of line) column and count number of rows
