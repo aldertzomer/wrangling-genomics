@@ -85,8 +85,12 @@ This metadata describes information on the *Ara-3* clones and the columns repres
 > >      `cut -d, -f2 Ecoli_metadata_composite.txt | tail -n+2 | sort -u | wc -l`  
 > >      The `tail -n+2` command uses explicit **+2** to start printing output from line 2 onwards to skip counting the header.
 > > 2. 62 rows, 12 columns
-> > 3. 10 citrate+ mutants
-> > 4. 5/6 hypermutable mutants (depending if you look at the clade (+H) or the mutator label)
+> >    + `tail -n+2 Ecoli_metadata_composite.csv | wc -l`
+> >      + tail complete file from line 2 down, subsequently count the number of lines
+> >    + `head -n1 Ecoli_metadata_composite.csv | grep ',' -o | wc -l`
+> >      + This takes the first HEADER line only, finds with grep ONLY (-o) matching , and counts them. We need to add 1 for the total: 11:1 = 12
+> > 4. 10 citrate+ mutants
+> > 5. 5/6 hypermutable mutants (depending if you look at the clade (+H) or the mutator label)
 > {: .solution}
 {: .challenge}
 
