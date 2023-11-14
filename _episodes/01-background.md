@@ -78,9 +78,9 @@ This metadata describes information on the *Ara-3* clones and the columns repres
 > >      Process: get the second field of the metadata, return an unique list and count.  
 > >      + grep/regular expression (matching from `^` start until first `,` then only numbers `[0-9]`:  
 > >        + `grep -P -o '^[A-Za-z0-9]+,[0-9]+,' Ecoli_metadata_composite.csv | sed -r "s/.+,([0-9]+),/\1/" | sort -u | wc -l`
-> >          + first use grep to ONLY (-o) return the REGULAREXPRESSION (-P) match to the MOTIF Starts with (^) any alphabeth character followed by , and a numer ([0-9]+)
-> >          + sed is basically a search and replace on online. It searches in the grep output for the number and only returns (\1) the number found by ([0-9]+).
-> >          + Next we make sorted list, make them uniq and count the uniques lines.
+> >          + first use grep to ONLY (-o) return the REGULAREXPRESSION (-P) match to the MOTIF line starting with (^) any alphabeth character followed by , and a number of more than 0 (+) length [0-9]+
+> >          + sed is basically a one line search and replace. It searches in the grep output for the number and only returns (\1) the number found by ([0-9]+).
+> >          + Next we make a sorted list, make it uniq and count the uniques lines.
 > >          + Try asking [ChatGPT](https://chat.openai.com/share/e19bf110-dbce-40ba-a04e-5b379cf7e2c6) to explain the grep answer and be amazed! 
 > >      + or if you followed the extra `awk` work:  
 > >          + `awk -F',' '{print $2}' Ecoli_metadata_composite.csv | sort -u | wc -l`
