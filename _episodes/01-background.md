@@ -90,7 +90,10 @@ This metadata describes information on the *Ara-3* clones and the columns repres
 > >    + `head -n1 Ecoli_metadata_composite.csv | grep ',' -o | wc -l`
 > >      + This takes the first HEADER line only, finds with grep ONLY (-o) matching , and counts them. We need to add 1 for the total: 11:1 = 12
 > > 4. 10 citrate+ mutants
-> > 5. 5/6 hypermutable mutants (depending if you look at the clade (+H) or the mutator label)
+> >    + `grep ',plus$' Ecoli_metadata_composite.csv | wc -l`
+> >      + find plus in the LAST ($=end of line) column and count number of rows
+> >      + Altrnative a count can be done in one go with grep -c: `grep -c ',plus$' Ecoli_metadata_composite.csv`
+> > 6. 5/6 hypermutable mutants (depending if you look at the clade (+H) or the mutator label)
 > {: .solution}
 {: .challenge}
 
