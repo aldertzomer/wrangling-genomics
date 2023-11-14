@@ -81,7 +81,7 @@ This metadata describes information on the *Ara-3* clones and the columns repres
 > >          + first we use grep to ONLY (-o) return the REGEXP (-P) match to the MOTIF Starts with (^) any alphabeth character followed by , and a numer ([0-9]+)
 > >          + sed is basically a search and replace on online. It searches in the grep output for the number and only returns (\1) the number found by ([0-9]+).
 > >          + Next we make sorted list, make them uniq and count the uniques lines.
-> >          + Try asking [ChatGPT] (https://chat.openai.com/share/e19bf110-dbce-40ba-a04e-5b379cf7e2c6) to explain the grep answer and be amazed! 
+> >          + Try asking [ChatGPT](https://chat.openai.com/share/e19bf110-dbce-40ba-a04e-5b379cf7e2c6) to explain the grep answer and be amazed! 
 > >      + or if you followed the extra `awk` work:  
 > >        `awk -F',' '{print $2}' Ecoli_metadata_composite.csv | sort -u | wc -l`  
 > >        Why does awk return 26 instead of 25 as a count?
