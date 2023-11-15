@@ -64,8 +64,11 @@ We will also download a set of trimmed FASTQ files to work with. These are small
 and will enable us to run our variant calling workflow quite quickly. 
 
 ~~~
+$ #download the file bundle
 $ curl -L -o sub.tar.gz https://ndownloader.figshare.com/files/14418248
+$ # extract the file bundle
 $ tar xvf sub.tar.gz
+$ # move files somewhere convenient
 $ mv sub/ ~/dc_workshop/data/trimmed_fastq_small
 ~~~
 {: .bash}
@@ -78,7 +81,6 @@ $ mv sub/ ~/dc_workshop/data/trimmed_fastq_small
 > ~~~
 > $ mkdir -p ~/dc_workshop/data/trimmed_fastq_small
 > $ cp ~/course_data/B-MBIMIGE22-23/intro_genomics_timalex/.backup/trimmed_fastq_small/* .
-> $ tar xvf sub.tar.gz
 > $ mv sub/ ~/dc_workshop/data/trimmed_fastq_small
 > ~~~
 > {: .bash}
