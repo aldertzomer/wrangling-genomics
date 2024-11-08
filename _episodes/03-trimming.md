@@ -130,7 +130,7 @@ We are going to run Trimmomatic on one of our paired-end samples.
 While using FastQC we saw that Nextera adapters were present in our samples. 
 The adapter sequences came with the installation of trimmomatic, so we will first copy these sequences into our current directory.
 ~~~
-$ cp ~/course_data/B-MBIMIGE22-23/intro_genomics_timalex/adapters/*.fa .
+$ cp ~/data/DataCarpentry/adapters/*.fa .
 ~~~
 {: .bash}
 
@@ -274,7 +274,7 @@ SRR2584863_2un.trim.fastq.gz  SRR2589044_1.fastq.gz
 >
 >> ## Solution
 >> ~~~
->> $ ls ~/course_data/B-MBIMIGE22-23/intro_genomics_timalex/adapters/
+>> $ ls ~/data/DataCarpentry/adapters/
 >> ~~~
 >> {: .bash}
 >>
