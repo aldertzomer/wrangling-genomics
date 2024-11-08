@@ -75,12 +75,12 @@ $ mv sub/ ~/dc_workshop/data/trimmed_fastq_small
 
 > ## Faster (?) option
 >
-> If your workshop is short on time or the venue's internet connection is weak or unstable, learners can
-> avoid needing to download the data and instead use the data files provided in the `~/course_data/B-MBIMIGE22-23/intro_genomics_timalex/.backup/` directory.
+> If you or your workshop is short on time or the venue's internet connection is weak or unstable, learners can
+> avoid to download the data and instead use the data files provided in the `~/data/DataCarpentry/.backup/` directory.
 >
 > ~~~
 > $ mkdir -p ~/dc_workshop/data/trimmed_fastq_small
-> $ cp ~/course_data/B-MBIMIGE22-23/intro_genomics_timalex/.backup/trimmed_fastq_small/* .
+> $ cp ~/data/DataCarpentry/.backup/trimmed_fastq_small/* .
 > $ mv sub/ ~/dc_workshop/data/trimmed_fastq_small
 > ~~~
 > {: .bash}
