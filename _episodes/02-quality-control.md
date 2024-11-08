@@ -67,12 +67,14 @@ curl -O ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR258/006/SRR2584866/SRR2584866_2.fa
 
 > ## Faster option
 >
-> If your workshop is short on time or the venue's internet connection is weak or unstable, learners can
-> avoid needing to download the data and instead use the data files provided in the `~/course_data/B-MBIMIGE22-23/intro_genomics_timalex/.backup/` directory.
+> If you or your workshop is short on time or the venue's internet connection is weak or unstable, learners can
+> avoid to download the data and instead use the data files provided in the `~/data/DataCarpentry/.backup/` directory.
 >
 > ~~~
 > $ cd ~/dc_workshop/data/untrimmed_fastq/
-> $ cp ~/course_data/B-MBIMIGE22-23/intro_genomics_timalex/.backup/untrimmed_fastq/*fastq.gz .
+> $ # copy the data. Do not forget the last . (dot) representing the CURRENT directory
+> $ # you could also replace the . with the actual full path ~/dc_workshop/data/untrimmed_fastq/
+> $ cp ~/data/DataCarpentry/.backup/untrimmed_fastq/*fastq.gz .
 > ~~~
 > {: .bash}
 >
@@ -524,9 +526,8 @@ We have now looked at quite a few "Per base sequence quality" FastQC graphs, but
 ## Working with the FastQC text output
 
 Now that we have looked at our HTML reports to get a feel for the data,
-let's look more closely at the other output files. Go back to the tab
-in your terminal program that is connected to your AWS instance
-(the tab label will start with `dcuser@ip`) and make sure you are in
+let's look more closely at the other output files. Go back to the 
+terminal program that is connected to the server and make sure you are in
 our results subdirectory.   
 
 ~~~
@@ -751,24 +752,24 @@ $ cat */summary.txt > ~/dc_workshop/docs/fastqc_summaries.txt
 > ## Quality encodings vary
 >
 > Although we have used a particular quality encoding system to demonstrate interpretation of 
-> read quality, different sequencing machines use different encoding systems. This means that, 
+> read quality, different sequencing machines can use different encoding systems. This means that, 
 > depending on which sequencer you use to generate your data, a `#` may not be an indicator of 
-> a poor quality base call.
+> a poor quality base call. Lukely most systems now adhere to the **Phred+33 quality scoring system**. 
 >
-> This mainly relates to older Solexa/Illumina data,
+> The other systems mainly relate to older Solexa/Illumina data (below version 1.8),
 > but it is essential that you know which sequencing platform was
 > used to generate your data, so that you can tell your quality control program which encoding
 > to use. If you choose the wrong encoding, you run the risk of throwing away good reads or
-> (even worse) not throwing away bad reads!
+> (even worse) not throwing away bad reads! You might still encounter these older data formats in public repositories.
 {: .callout}
 
 
 > ## Same symbols, different meanings
 >
-> Here we see `>` being used as a shell prompt, whereas `>` is also
+> Sometimes we see `>` being used as a **shell prompt**, whereas `>` is also
 > used to redirect output.
 > Similarly, `$` is used as a shell prompt, but, as we saw earlier,
-> it is also used to ask the shell to get the value of a variable.
+> it is also used to ask the shell to get the value of a variable or indicate the end of a line in a *regular expression*.
 >
 > If the *shell* prints `>` or `$` then it expects you to type something,
 > and the symbol is a prompt.
