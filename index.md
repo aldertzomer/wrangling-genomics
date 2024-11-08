@@ -29,5 +29,5 @@ use a variety of bioinformatic tools with confidence and greatly enhance your re
 > This lesson also assumes some familiarity with biological concepts, including the structure of DNA, nucleotide abbreviations, and the 
 > concept of genomic variation within a population. 
 >
-> This lesson has been modified to use the cocalc facilities from Utrecht University. If you want to setup and run your own Amazon instance see http://datacarpentry.org/
+> This lesson has been slightly modified to use the gemini server from Utrecht University starting with editionn 2024. If you want to setup and run your own Amazon instance see http://datacarpentry.org/ or explore your possibilities using the *Windows Subsystem for Linux* (WSL; Windows).
 {: .prereq}
