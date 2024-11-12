@@ -411,16 +411,15 @@ The last two columns contain the genotypes and can be tricky to decode.
 | FORMAT | lists in order the metrics presented in the final column | 
 | results | lists the values associated with those metrics in order | 
 
-For our file, the metrics presented are GT:PL:GQ. 
+For our file, the metrics presented are GT:PL. 
 
 | metric | definition | 
 | ------- | ---------- |
 | AD, DP | the depth per allele by sample and coverage |
 | GT | the genotype for the sample at this loci. For a diploid organism, the GT field indicates the two alleles carried by the sample, encoded by a 0 for the REF allele, 1 for the first ALT allele, 2 for the second ALT allele, etc. A 0/0 means homozygous reference, 0/1 is heterozygous, and 1/1 is homozygous for the alternate allele. |
-| PL | the likelihoods of the given genotypes |
-| GQ | the Phred-scaled confidence for the genotype | 
+| PL | the likelihoods of the given genotypes | 
 
-The Broad Institute's [VCF guide](https://www.broadinstitute.org/gatk/guide/article?id=1268) is an excellent place
+The specification [VCF guide](https://samtools.github.io/hts-specs/VCFv4.2.pdf)) is an excellent place
 to learn more about the VCF file format.
 
 > ## Exercise
