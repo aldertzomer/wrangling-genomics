@@ -499,16 +499,14 @@ AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGCTTCTGAACTG
 ~~~
 {: .output}
 
+Most likely in your terminal the output is cut to something around 71 columns. This is due to a graphical backend missing. Don't worry, in "real" life 
+we typically prefer to do inspections using a graphical viewer anyways. The number of shown columns depend on the width of your terminal and can be more 
+wide wile using an additional command before samtools (don't mind remembering this). `export COLUMNS; samtools tview .....`.
+
 The first line of output shows the genome coordinates in our reference genome. The second line shows the reference
 genome sequence. The third line shows the consensus sequence determined from the sequence reads. A `.` indicates
 a match to the reference sequence, so we can see that the consensus from our sample matches the reference in most
 locations. That is good! If that was not the case, we should probably reconsider our choice of reference.
-
-Below the horizontal line, we can see all of the reads in our sample aligned with the reference genome. Only 
-positions where the called base differs from the reference are shown. You can use the arrow keys on your keyboard
-to scroll or type `?` for a help menu. To navigate to a specific position, type `g`. A dialogue box will appear. In
-this box, type the name of the "chromosome" followed by a colon and the position of the variant you would like to view
-(e.g. for this sample, type `CP000819.1:50` to view the 50th base. Type `Ctrl^C` or `q` to exit `tview`. 
 
 > ## Exercise 
 > 
