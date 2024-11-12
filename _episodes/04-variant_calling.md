@@ -542,9 +542,10 @@ to unzip it, and then drag the program into your Applications folder.
 3. Load our BAM file (`SRR2584866.aligned.sorted.bam`) using the **"Load from File..."** option under the **"File"** pull-down menu. 
 4.  Do the same with our VCF file (`SRR2584866_final_variants.vcf`).
 
-Your IGV browser should look like the screenshot below (if it looks different you may be viewing a different sample):
+Your IGV browser should look like the screenshot below (if it looks different you may be viewing a different sample). Be sure to have loaded the reference file, the vcf and the indexed/sorted bam:
 
-![IGV](../img/igv-screenshot.png)
+![image](https://github.com/user-attachments/assets/396379d1-4c49-4624-baa3-a136703d2fc9)
+
 
 There should be two tracks: one coresponding to our BAM file and the other for our VCF file. 
 
