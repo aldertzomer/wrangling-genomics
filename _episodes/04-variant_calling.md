@@ -501,7 +501,7 @@ AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGCTTCTGAACTG
 
 Most likely in your terminal the output is cut to something around 71 columns. This is due to a missing link between the terminal and a graphical display. Don't worry, in "real" life 
 we typically prefer to do inspections using a graphical viewer anyways. The number of shown columns depend on the width of your terminal and can be more 
-wide wile using an additional command before samtools (don't mind remembering this). `export COLUMNS; samtools tview .....`.
+wide when using an additional command before samtools (don't mind remembering this): `export COLUMNS; samtools tview .....`.
 
 The first line of output shows the genome coordinates in our reference genome. The second line shows the reference
 genome sequence. The third line shows the consensus sequence determined from the sequence reads. A `.` indicates
