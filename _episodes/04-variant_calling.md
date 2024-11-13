@@ -69,7 +69,9 @@ $ curl -L -o sub.tar.gz https://ndownloader.figshare.com/files/14418248
 $ # extract the file bundle
 $ tar xvf sub.tar.gz
 $ # move files somewhere convenient
-$ mv sub/ ~/dc_workshop/data/trimmed_fastq_small
+$ mv sub/* ~/dc_workshop/data/trimmed_fastq_small
+$ # cleanup the old (now empty) sub folder
+$ rm -r sub
 ~~~
 {: .bash}
 
@@ -80,8 +82,7 @@ $ mv sub/ ~/dc_workshop/data/trimmed_fastq_small
 >
 > ~~~
 > $ mkdir -p ~/dc_workshop/data/trimmed_fastq_small
-> $ cp ~/data/DataCarpentry/.backup/trimmed_fastq_small/* .
-> $ mv sub/ ~/dc_workshop/data/trimmed_fastq_small
+> $ cp ~/data/DataCarpentry/.backup/trimmed_fastq_small/* ~/dc_workshop/data/trimmed_fastq_small
 > ~~~
 > {: .bash}
 >
