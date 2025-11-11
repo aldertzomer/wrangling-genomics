@@ -443,11 +443,11 @@ to learn more about the VCF file format.
 >>
 >> Can you think of a reason why we now have provided the `grep` search term # between double quotation marks " "?
 >>
->>> ### Solution 2
+>>> ## Solution 2
 >>> 
 >>> Could this have something to do with the special meaning of # in the shell itself (commenting)?
 >>> 
->>> There are other characters that would need quoting! For example 
+>>> There are other characters that would need quoting! For example
 >>> 
 >> {: .solution}
 > {: .solution}
