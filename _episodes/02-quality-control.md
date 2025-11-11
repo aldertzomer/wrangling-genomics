@@ -490,7 +490,7 @@ instance, where our local computer can not see them.
 So the easiest way to look at these webpage summary reports will be
 to transfer them to our local computers (i.e. your laptop).
 
-Use the webbrowser to select the files and download these from the File menu. Download the zip archive and unpack these.
+Use winscp, filezilla or sftp (commandline) to transfer these files from the server to your local computer. Get the zip archive and unpack these.
 Now we can go to our new directory and open the 6 HTML files.
 
 Depending on your system, you should be able to select and open them all at once via a right click menu
