@@ -70,6 +70,9 @@ This metadata describes information on the *Ara-3* clones and the columns repres
 > 3. How many citrate+ mutants have been recorded in **Ara-3**?
 > 4. How many hypermutable mutants have been recorded in **Ara-3**?
 >
+> Note: if you want to use this file on the server we need to make sure it is on the server. If you downloaded it from above link to your local computer, you can use winscp or filezilla. ALternative to directly download it to the server using `curl`
+> `curl -O https://raw.githubusercontent.com/datacarpentry/wrangling-genomics/gh-pages/files/Ecoli_metadata_composite.csv`
+> 
 > > ## Solution
 >> 
 > > 1. 25 different generations
