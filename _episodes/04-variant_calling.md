@@ -447,10 +447,10 @@ to learn more about the VCF file format.
 >>> 
 >>> Could this have something to do with the special meaning of # in the shell itself (commenting)?
 >>> 
->>> There are other characters that would need quoting! For example the pipe `&#124;` any `&gt;` `&#123;` `&#125;` characters, or phrases with a space.
+>>> There are other characters that would need quoting! For example 
 >>> 
->> {: .solution}
-> {: .solution}
+>> {: .solution} 
+> {: .solution} 
 {: .challenge}
 
 ## Assess the alignment (visualization) - optional step
