@@ -512,7 +512,9 @@ locations. That is good! If that was not the case, we should probably reconsider
 > ## Exercise 
 > 
 > Visualize the alignment of the reads for our `SRR2584866` sample. What variant is present at 
-> position 4377265? What is the canonical nucleotide in that position? 
+> position 4377265? What is the canonical nucleotide in that position?
+>
+> Note: By default on modern terminas `tview` from samtools should work in <u>interactive</u> mode. If you are however returned directly to your terminal and it dumps the text to your screen, the system doesn't support a specific library. You cannot change that easily. Skip this (non essintial) part and continue with the graphical representation. If you still want the answer, you can use grep to find the position in the vcf file itself. 
 > 
 >> ## Solution
 >> 
@@ -521,7 +523,7 @@ locations. That is good! If that was not the case, we should probably reconsider
 >> ~~~
 >> {: .bash}
 >> 
->> Then type `g`. In the dialogue box, type `CP000819.1:4377265`. 
+>> Interactive tview mode should be enabled (see above): Then type `g`. In the dialogue box, type `CP000819.1:4377265`. 
 >> `G` is the variant. `A` is canonical. This variant possibly changes the phenotype of this sample to hypermutable. It occurs
 >> in the gene *mutL*, which controls DNA mismatch repair.
 > {: .solution}
