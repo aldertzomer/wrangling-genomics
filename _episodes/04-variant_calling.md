@@ -450,6 +450,7 @@ to learn more about the VCF file format.
 >>>
 >>>> #### Solution 3
 >>>> Yes: For example this includes the pipe (|) any > {} characters, or phrases with a space.
+>>>> 
 >>> {: .solution}
 >> {: .solution}
 > {: .solution}
