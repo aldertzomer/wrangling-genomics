@@ -441,13 +441,13 @@ to learn more about the VCF file format.
 >>
 >> There are 767 variants in this file.
 >>
->> Can you think of a reason why we now have provided the grep search term # between " "?
+>> Can you think of a reason why we now have provided the `grep` search term # between " "?
 >>
 >>> ### Solution 2
 >>> 
 >>> Could this have something to do with the special meaning of # in the shell itself (commenting)?
 >>> 
->>> There are other characters that would need quoting including for example the pipe `|` any `>` `{` `}` characters, or phrases with a space.
+>>> There are other characters that would need quoting including for example the pipe `\|` any `\>` `\{` `\}` characters, or phrases with a space.
 >>> 
 >> {: .solution}
 > {: .solution}
