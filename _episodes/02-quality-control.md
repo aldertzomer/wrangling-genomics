@@ -484,7 +484,7 @@ $ cd ~/dc_workshop/results/fastqc_untrimmed_reads/
 If we were working on our local computers, we would be able to look at 
 each of these HTML files by opening them in a web browser from our file explorer.
 
-However, these files are currently sitting on our remote cocalc 
+However, these files are currently sitting on our remote SERVER 
 instance, where our local computer can not see them.
 
 So the easiest way to look at these webpage summary reports will be
