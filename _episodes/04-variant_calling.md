@@ -449,7 +449,7 @@ to learn more about the VCF file format.
 >>> Are there other characters that would need quoting? 
 >>>
 >>>> #### Solution 3
->>> Yes: For example this includes the pipe (|) any > {} characters, or phrases with a space.
+>>>> Yes: For example this includes the pipe (|) any > {} characters, or phrases with a space.
 >>> {: .solution}
 >> {: .solution}
 > {: .solution}
