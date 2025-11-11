@@ -703,7 +703,9 @@ We can make a record of the results we obtained for all our samples
 
 by concatenating all of our `summary.txt` files into a single file 
 using the `cat` command. We will call this `fastqc_summaries.txt` and move
-it to `~/dc_workshop/docs`.
+it to `~/dc_workshop/docs`.  
+Note: if you did not make the docs folder yet you need to create it: `mkdir -p ~/dc_workshop/docs`  
+Note2: the option -p means create the full path if it does not exist.
 
 ~~~
 $ cat */summary.txt > ~/dc_workshop/docs/fastqc_summaries.txt
