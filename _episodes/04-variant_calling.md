@@ -443,11 +443,11 @@ to learn more about the VCF file format.
 >>
 >> Can you think of a reason why we now have provided the grep search term # between " "?
 >>
->>> ## Solution 2
->>>Could this have something to do with the special meaning of # in the shell itself (commenting)? Are there other characters that would need quoting?  
->>>Yes: For example this includes the pipe (|) any > signs or phrases with a space.
->>{: .solution}
->{: .solution}
+>>> ### Solution 2
+>>> Could this have something to do with the special meaning of # in the shell itself (commenting)? Are there other characters that would need quoting?  
+>>> Yes: For example this includes the pipe (|) any > signs or phrases with a space.
+>> {: .solution}
+> {: .solution}
 {: .challenge}
 
 ## Assess the alignment (visualization) - optional step
