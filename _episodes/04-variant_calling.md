@@ -441,7 +441,7 @@ to learn more about the VCF file format.
 >>
 >> There are 767 variants in this file.
 >>
->> Can you think of a reason why we now have provided the `grep` search term # between " "?
+>> Can you think of a reason why we now have provided the `grep` search term # between double quotation marks " "?
 >>
 >>> ### Solution 2
 >>> 
@@ -449,8 +449,8 @@ to learn more about the VCF file format.
 >>> 
 >>> There are other characters that would need quoting! For example 
 >>> 
->> {: .solution} 
-> {: .solution} 
+>> {: .solution}
+> {: .solution}
 {: .challenge}
 
 ## Assess the alignment (visualization) - optional step
