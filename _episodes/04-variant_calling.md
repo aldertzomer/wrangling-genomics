@@ -446,12 +446,8 @@ to learn more about the VCF file format.
 >>> ### Solution 2
 >>> Could this have something to do with the special meaning of # in the shell itself (commenting)?
 >>> 
->>> Are there other characters that would need quoting? 
->>>
->>>> #### Solution 3
->>>> Yes: For example this includes the pipe (|) any > {} characters, or phrases with a space.
->>>> 
->>> {: .solution}
+>>> And there other characters that would need quoting including for example the pipe (|) any > {} characters, or phrases with a space.
+>>> 
 >> {: .solution}
 > {: .solution}
 {: .challenge}
