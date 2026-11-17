@@ -405,7 +405,7 @@ $ cd ~/dc_workshop/data/untrimmed_fastq/
 > {: .solution}
 {: .challenge}
 
-FastQC can accept multiple file names as input, and on both zipped and unzipped files, so we can use the \*.fastq* wildcard to run FastQC on all of the FASTQ files in this directory.
+FastQC can accept multiple file names as input, and on both zipped and unzipped files, so we can use the \*.fastq* wildcard to run FastQC on all of the FASTQ files in this directory. For cleaner subsequent work it would make sense to gzip the file you unzipped before (the large .fastq file): `gzip SRR2584863_1.fastq` or to get this gzipped file again using `cp` from the same location as before.
 
 ~~~
 $ fastqc *.fastq*
