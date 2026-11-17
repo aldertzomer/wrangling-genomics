@@ -18,7 +18,7 @@ We mentioned before that we are working with files from a long-term evolution st
 
 # Alignment to a reference genome
 
-![workflow_align](../img/variant_calling_workflow_align.png)
+![workflow_align](../img/variant_calling_workflow_align.png)Variant_calling_complete_workflow_alex.png
 
 We perform read alignment or mapping to determine where in the genome our reads originated from. There are a number of tools to
 choose from and, while there is no gold standard, there are some tools that are better suited for particular NGS analyses. We will be
@@ -452,6 +452,13 @@ to learn more about the VCF file format.
 >> {: .solution}
 > {: .solution}
 {: .challenge}
+
+## Final work flow
+
+Your final work flow for variant calling now looks something like the below figure.
+![workflow_align](../img/Variant_calling_complete_workflow_alex.png)
+
+
 
 ## Assess the alignment (visualization) - optional step
 
