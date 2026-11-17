@@ -86,6 +86,11 @@ curl -O ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR258/006/SRR2584866/SRR2584866_2.fa
 The data comes in a compressed format, which is why there is a `.gz` at the end of the file names. This makes it faster to transfer, and allows it to take up less space on our computer. Let's unzip one of the files so that we can look at the fastq format.
 
 ~~~
+# Here we gunzip the fastq file into a .fastq text file
+# Subsequent we can run some inspection commands like head
+# Later we will need to use the gzipped version again.
+# Make sure to `gzip filename` or alternative use zhead zcat zgrep on the gzipped version and skip decompression/recompression
+
 $ gunzip SRR2584863_1.fastq.gz
 ~~~
 {: .bash}
@@ -113,6 +118,8 @@ the first four lines.
 
 ~~~
 $ head -n 4 SRR2584863_1.fastq
+
+# alternative is to use zhead on the .gz file directly
 ~~~
 {: .bash}
 
@@ -176,6 +183,8 @@ very poor (`#` = a quality score of 2).
 >> ## Solution
 >> ~~~
 >> $ tail -n 4 SRR2584863_1.fastq
+>>
+>> # Unfortunately there is no ztail analogue to tail, but you can establish the same: `cat filename.fastq.gz | tail -n 4`
 >> ~~~
 >> {: .bash}
 >>
